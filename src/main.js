@@ -8,8 +8,21 @@ export default class App {
         }
         return factorial;
     }
+
+    convertirAString(numero){
+        let i = 1;
+        let aster = ``;
+        while (i <= numero) {
+            aster += `*`;
+
+            i++;
+        }
+        return aster;
+    }
 }
 
 let app = new App();
 
 console.log(app.factorial(5));
+
+console.log(app.convertirAString(5));
