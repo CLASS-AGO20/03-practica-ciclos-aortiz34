@@ -19,6 +19,18 @@ export default class App {
         }
         return aster;
     }
+
+    obtenerDivisibles(numero){
+        let i = 1;
+        let suma = 0;
+        do {
+            if (numero % i === 0){
+                suma += 1;
+              }
+              i++;
+        }while (i <= numero);
+        return suma;
+    }
 }
 
 let app = new App();
@@ -26,3 +38,5 @@ let app = new App();
 console.log(app.factorial(5));
 
 console.log(app.convertirAString(5));
+
+console.log(app.obtenerDivisibles(6));
